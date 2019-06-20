@@ -1,6 +1,6 @@
-# LegoNet_private
+# LegoNet
 
-This code is the implementation of ICML2019 paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters]()
+This code is the implementation of ICML2019 paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
 
 ## Run
 
@@ -8,7 +8,7 @@ This code is the implementation of ICML2019 paper [LegoNet: Efficient Convolutio
 python train.py
 ```
 
-You should achieve an VGG16 with 93.88% accuracy on CIFAR10 dataset, the lego filters occupy ~3.8M parameters.
+You could achieve an VGG16 with 93.88% accuracy on CIFAR10 dataset, the lego filters occupy ~3.8M parameters.
 
 ## LegoConv2d
 
@@ -27,3 +27,13 @@ aux_combination: combination index
 ## Note
 
 The aux_coefficients and aux_combination should be saved as sparse matrix for saving memory. This code does not include this part.
+
+## Citation
+
+	@inproceedings{legonet,
+		title={LegoNet: Efficient Convolutional Neural Networks with Lego Filters},
+		author={Yang, Zhaohui and Wang, Yunhe and Liu, Chuanjian and Chen, Hanting and Xu, Chunjing and Shi, Boxin and Xu, Chao and Xu, Chang},
+		booktitle={International Conference on Machine Learning},
+		pages={7005--7014},
+		year={2019}
+	}
